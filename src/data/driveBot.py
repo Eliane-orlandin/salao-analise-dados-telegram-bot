@@ -6,7 +6,9 @@ import pandas as pd
 
 class driveBot:
     def __init__(self):
-        self.gc = gspread.service_account(filename = "credentials.json")
+        credentials_json = getenv("GOOGLE_CREDENTIALS")
+        credentials_dict = json.loads(credentials_json)
+        self.gc = gspread.service_account_from_dict(credentials_dict)
 
     def get_data(self):
         link_google_sheet = getenv("LINK_SHEET")
