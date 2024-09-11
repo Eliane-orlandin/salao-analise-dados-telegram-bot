@@ -90,3 +90,6 @@ target/
 
 # Credentials Google Drive / Google Cloud Bot
 credentials.json
+
+# Ignore virtual environment
+venv/
