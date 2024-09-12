@@ -1,6 +1,79 @@
-# analise-dados-telegram-bot
+# Análise de Dados para o Salão Stella
 
-Bot de Telegram voltado para Analise de Dados do Salão Stella.
+## Descrição
+
+Este projeto é um bot para o Telegram que analisa dados de um salão de cabeleireiro chamado **Stella Cabeleireiros**. O bot coleta e analisa informações sobre serviços prestados, clientes, profissionais e pagamentos. O objetivo é fornecer insights úteis para a gestão do salão, como receita por pagamento, serviços mais populares e desempenho dos profissionais.
+
+## Funcionalidades
+
+- **Análise de Dados:** Coleta e analisa dados como Data, Nome do Cliente, Serviço, Profissional, Valor (R$), Forma de Pagamento.
+- **Relatórios:** Gera relatórios sobre receita por pagamento, serviços populares e receita por profissional.
+- **Interatividade:** Envia imagens de gráficos de barra após opção escolhida.
+
+## Tecnologias Utilizadas
+
+- **Python:** Linguagem de programação principal.
+- **Telegram API:** Para integração com o bot do Telegram.
+- **Google Sheets API:** Para coleta e análise de dados.
+- **Heroku:** Hospedagem do bot e serviços associados.
+
+## Requisitos
+
+- Python 3.8 ou superior
+- Conta no Telegram e token do bot
+- Conta do Google e credenciais da API do Google Sheets
+- Conta no Heroku (opcional para implantação)
+
+## Instalação
+
+1. **Clone o Repositório:**
+
+   ```bash
+   git clone https://github.com/Eliane-orlandin/salao-analise-dados-telegram-bot.git
+   cd salao-analise-dados-telegram-bot
+   ```
+
+2. **Crie um Ambiente Virtual e Instale as Dependências:**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+   pip install -r requirements.txt
+   ```
+
+3. **Execute o Bot:**
+
+   ```bash
+   python main.py
+   ```
+
+## Uso
+
+1. **Inicie uma conversa com o bot no Telegram:**
+
+   Encontre o bot usando o nome de usuário `@AnaliseDadosSalao_bot` e inicie uma conversa.
+
+2. **Interaja com o Bot:**
+
+   Use os comandos disponíveis para obter relatórios e análises de dados.
+
+## Contribuição
+
+Se você quiser contribuir para este projeto, siga estas etapas:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua modificação (`git checkout -b feature/MinhaNovaFuncionalidade`).
+3. Faça suas alterações e commit (`git commit -am 'Adiciona nova funcionalidade'`).
+4. Faça o push para sua branch (`git push origin feature/MinhaNovaFuncionalidade`).
+5. Envie um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Contato
+
+Se você tiver alguma dúvida ou sugestão, entre em contato com [Eliane Orlandin](mailto:liorlandin33@gmil.com).
 
 ## Project Organization
 
